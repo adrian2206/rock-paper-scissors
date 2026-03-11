@@ -51,7 +51,15 @@ rockPaperScissor.addEventListener('click', (event) => {
                 break;
         }
         let results = document.querySelector('#results');
-        results.textContent = `Results: Human - ${humanScore} Computer - ${computerScore}`;
+        if(humanScore === 5) {
+            humanScore = 0;
+            computerScore = 0;
+            return results.textContent = `Winner: Human`;
+        } else if(computerScore === 5) {
+            humanScore = 0;
+            computerScore = 0;
+            return results.textContent = `Winner: Computer`;
+        }else {results.textContent = `Results: Human - ${humanScore} Computer - ${computerScore}`;}
 });
 
            
