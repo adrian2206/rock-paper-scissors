@@ -62,26 +62,6 @@ rockPaperScissor.addEventListener('click', (event) => {
         }else {results.textContent = `Results: Human - ${humanScore} Computer - ${computerScore}`;}
 });
 
-           
-      
-            //  function playGame () {
-        //     for (let i = 0; i <= 3; i++) {
-        //     let humanSelection = getHumanChoice();
-        //     let computerSelection = getComputerChoice();
-        //         playRound(humanSelection, computerSelection);
-        //     };
-        //     return `${humanScore} ${computerScore}`;
-        //  };
-
-
-        //  console.log(playGame());
-
-
-    //   function getHumanChoice() {
-    //     let choice = prompt("Make your choice: rock, paper or scissor.");
-    //     return choice.toLowerCase();
-    //   };
-
 
 
 
